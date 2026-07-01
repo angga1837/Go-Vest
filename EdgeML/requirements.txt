@@ -1,0 +1,7 @@
+# requirements.txt
+pandas
+numpy
+scikit-learn
+tensorflow        # kalau di lokal; di Google Colab sudah tersedia bawaan
+matplotlib         # opsional, untuk visualisasi distribusi data
+seaborn            # opsional, untuk visualisasi distribusi data

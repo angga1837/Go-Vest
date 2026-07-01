@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Status: Safe */
+    --color-safe-bg:     #1bbd71;
+    --color-safe-border: #A7F3D0;
+    --color-safe-text:   #065F46;
+    --color-safe-accent: #10B981;
+
+    /* Status: Danger  */
+    --color-danger-bg:     #ed6a6a;
+    --color-danger-border: #df5b5b;
+    --color-danger-text:   #540c0c;
+    --color-danger-accent: #c02424;
+
+    /* Status: Warning */
+    --color-warning-bg:     #5b4b08;
+    --color-warning-border: #FCD34D;
+    --color-warning-text:   #92400E;
+    --color-warning-accent: #b17713;
+
+    /* Neutral (Ink) */
+    --color-ink-900: #111827;
+    --color-ink-700: #374151;
+    --color-ink-500: #6B7280;
+    --color-ink-300: #D1D5DB;
+    --color-ink-100: #F3F4F6;
+
+    /* --- Brand --- */
+    --color-brand:       #1E3A5F;
+    --color-brand-light: #2E5482;
+  }
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-ink-100);
+    color: var(--color-ink-900);
+  }
+  [data-metric] {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-ink-100 bg-white p-5;
+  }
+  .metric-label {
+    @apply text-xs font-medium uppercase tracking-wide text-ink-500;
+  }
+  .metric-value {
+    @apply mt-1 font-mono text-2xl font-semibold text-ink-900;
+  }
+  .section-title {
+    @apply mb-3 text-sm font-semibold text-ink-700;
+  }
+}

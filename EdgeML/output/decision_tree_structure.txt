@@ -1,0 +1,64 @@
+|--- min_magnitude <= 0.70
+|   |--- std_ay <= 0.86
+|   |   |--- mean_ay <= 0.59
+|   |   |   |--- std_ay <= 0.75
+|   |   |   |   |--- max_gyro_magnitude <= 159.65
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- max_gyro_magnitude >  159.65
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- std_ay >  0.75
+|   |   |   |   |--- mean_gyro_magnitude <= 94.30
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- mean_gyro_magnitude >  94.30
+|   |   |   |   |   |--- class: 1
+|   |   |--- mean_ay >  0.59
+|   |   |   |--- min_magnitude <= 0.57
+|   |   |   |   |--- mean_ax <= -0.53
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- mean_ax >  -0.53
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- min_magnitude >  0.57
+|   |   |   |   |--- mean_gz <= 4.96
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- mean_gz >  4.96
+|   |   |   |   |   |--- class: 0
+|   |--- std_ay >  0.86
+|   |   |--- mean_tilt <= 88.80
+|   |   |   |--- min_magnitude <= 0.14
+|   |   |   |   |--- class: 0
+|   |   |   |--- min_magnitude >  0.14
+|   |   |   |   |--- class: 1
+|   |   |--- mean_tilt >  88.80
+|   |   |   |--- mean_gx <= -45.71
+|   |   |   |   |--- mean_magnitude <= 1.34
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- mean_magnitude >  1.34
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- mean_gx >  -45.71
+|   |   |   |   |--- mean_gz <= 55.91
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- mean_gz >  55.91
+|   |   |   |   |   |--- class: 0
+|--- min_magnitude >  0.70
+|   |--- tilt_range <= 38.46
+|   |   |--- mean_magnitude <= 0.94
+|   |   |   |--- max_magnitude <= 1.11
+|   |   |   |   |--- class: 1
+|   |   |   |--- max_magnitude >  1.11
+|   |   |   |   |--- class: 0
+|   |   |--- mean_magnitude >  0.94
+|   |   |   |--- max_magnitude <= 1.48
+|   |   |   |   |--- std_magnitude <= 0.03
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- std_magnitude >  0.03
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- max_magnitude >  1.48
+|   |   |   |   |--- class: 1
+|   |--- tilt_range >  38.46
+|   |   |--- mean_ay <= 0.61
+|   |   |   |--- std_magnitude <= 0.11
+|   |   |   |   |--- class: 1
+|   |   |   |--- std_magnitude >  0.11
+|   |   |   |   |--- class: 1
+|   |   |--- mean_ay >  0.61
+|   |   |   |--- class: 0
