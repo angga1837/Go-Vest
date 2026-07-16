@@ -12,7 +12,7 @@
 * **Web Dashboard Modern:** Antarmuka pemantauan terpusat dengan peta pelacakan posisi pekerja (Leaflet), visualisasi orientasi tubuh 3D, grafik tren kesehatan, dan fitur penanganan *alert* terintegrasi.
 
 ---
-## 🏗️ Arsitektur Sistem
+## Arsitektur Sistem
 
 Proyek ini dibangun menggunakan arsitektur *Monorepo* yang membagi sistem menjadi 4 komponen utama:
 
