@@ -1,20 +1,7 @@
 // ============================================================
-// govest (Go-Vest) — Firmware Fase 2: Tambah MQTT Publish
+// Safevest 2.0 (Go-Vest) 
 // ============================================================
-// INI ADALAH FIRMWARE FASE 1 KAMU (Go-Vest_Fase1.ino) + TAMBAHAN MQTT.
-// Semua bagian sensor/decision-tree/SIM800L/GPS TIDAK DIUBAH SAMA SEKALI -
-// hanya menambahkan blok baru untuk publish data ke MQTT broker (HiveMQ Cloud)
-// dan mengganti placeholder "[PLACEHOLDER MQTT]" dengan publish sungguhan.
 //
-// YANG BARU di Fase 2 ini:
-//   1. WiFiClientSecure + PubSubClient untuk koneksi MQTT TLS ke HiveMQ Cloud
-//   2. Root CA certificate (ISRG Root X1) di-embed untuk verifikasi TLS
-//   3. publishTelemetry() - kirim semua data sensor setiap 3 detik
-//   4. publishAlert() - kirim event darurat segera saat status danger berubah
-//   5. mqttCallback() - terima command dari dashboard (tombol "Kirim WA Manual")
-//   6. sendAlertWithFallback() DIUBAH: sekarang benar-benar publish MQTT,
-//      bukan placeholder Serial.println saja
-// ============================================================
 
 #include <Wire.h>
 #include <WiFi.h>
